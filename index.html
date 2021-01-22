@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <title>Playoff</title>
 
@@ -14,6 +15,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.css">
     <link rel="stylesheet" href="main.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script>
+        function SubForm() {
+            $.ajax({
+                url: "https://api.apispreadsheets.com/data/7005/",
+                type: "post",
+                data: $("#myForm").serializeArray(),
+                success: function () {
+                    alert("Form Data Submitted :)")
+                },
+                error: function () {
+                    alert("There was an error :(")
+                }
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -128,7 +147,6 @@
 
             </div>
         </div>
-        <!-- repeat the card here. -->
         <div class="card">
             <header class="article-header">
                 <div>
@@ -253,7 +271,7 @@
                     target="_blank"><span>Enroll Now</span></a>
 
             </div>
-        
+
         </div>
         <div class="paddles">
             <button class="left-paddle paddle hidden">
@@ -262,9 +280,7 @@
                         >
                     </button>
         </div>
-        
     </div>
-
     <div class="headingacademy">Coaches
     </div>
 
@@ -319,7 +335,8 @@
         </div>
     </div>
 
-    <div class="headingacademy">Testimonials
+    <div class="headingacademy">
+        Testimonials
     </div>
 
     <div class="demo">
@@ -359,6 +376,66 @@
             </div>
         </div>
     </div>
+    <div class="contactbox">
+        <div class="contact_container">
+            <div class="contact">
+                <h2 class="contact_us">Contact us
+                </h2>
+                <p>The easiest way to get in touch with us is via phone or email.</p>
+                <div class="contact_details">
+                    <div class="icons">
+                        <div class="phone">
+                            <div class="phoneimage">
+                                <img src="images/call.png">
+                            </div>
+                            PHONE
+                            <div class="phonenumber"> +91 9582417663</div>
+
+                        </div>
+                        <div class="phone">
+                            <div class="phoneimage">
+                                <img src="images/email.png">
+                            </div>
+                            EMAIL
+                            <div class="phonenumber">playoff.in.2021@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form_layout">
+                <div class="formcontent">
+                    <div class="formheading">
+                        <h1>Drop us a line</h1>
+                    </div>
+                    <div class="formpara">
+                        <p>If you have any queries or suggestions, you can send them to us and we’ll make sure to reply
+                            back
+                            at the
+                            earliest.</p>
+                    </div>
+                </div>
+                <form id="myForm">
+                    <div class="input-field">
+                        <input type="text" name="full_name" id="email" required />
+                        <label for="full_name">Your name:</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="email" id="email" required />
+                        <label for="email">Your email:</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="phone" id="phone" required />
+                        <label for="phone">Your phone:</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="message" id="message"  required />
+                        <label for="message">Any message:</label>
+                    </div>
+                </form>
+                <button onclick="SubForm()">Submit</button>
+            </div>
+        </div>
+    </div>
     <script>
         window.onscroll = function () { myFunction() };
 
@@ -379,6 +456,8 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+
 </body>
 
 </html>

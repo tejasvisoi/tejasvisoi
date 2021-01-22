@@ -126,17 +126,18 @@ margin-bottom: 3rem;
 }
 
 .paddle {
-	position: relative;
+  position: relative;
+  display: inline-block;
 	top: 0;
 	bottom: 0;
-	width: 3em;
+	width: 3rem;
 }
 
 .left-paddle {
-	left: 0;
+	float: left;
 }
 .right-paddle {
-	right: 0;
+	float: right;
 }
 .card-container {
 max-width: 80%;
@@ -468,6 +469,164 @@ color: #fff;
     transition: all 0.3s ease 0s;
 }
 
+.contactbox{
+  margin: auto;
+  width: 80%;
+  margin-top: 25rem;
+  margin-bottom: 10rem;
+}
+.contact_container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact_container.contact{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_container.form_layout{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_us{
+  font-size: 3rem;
+  margin-bottom: 5rem;
+  letter-spacing: 2px;
+}
+
+.contact p{
+  font-size: 1.5rem;
+  width: 40rem;
+  letter-spacing: 2px;
+  margin-bottom: 5rem;
+}
+
+.icons{
+  display: flex;
+  flex-direction: row;
+
+}
+.phoneimage{
+  max-width: 20px;
+  margin-bottom: 1rem;
+}
+
+.phone{
+  margin-right: 10rem;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.phonenumber{
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.form_layout{
+  width: 40rem;
+  height: 50rem;
+  background-color: #17141d;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.formpara {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  letter-spacing: 1px;
+  line-height: 2rem;
+}
+
+.formcontent{
+  display: flex;
+  width: 85%;
+  margin-top: 3rem;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formheading{
+  margin: auto;
+}
+
+.formheading h1{
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+
+form{
+  margin-top: 3rem;
+}
+.input-field {
+  position: relative;
+  width: 85%;
+  margin: auto;
+  margin-top: 1.5rem;
+  height: 5rem;
+  line-height: 44px;
+}
+label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  color: #8d8d8d;
+  transition: 0.2s all;
+  cursor: text;
+}
+
+input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 1rem 0;
+  background-color: rgba(255, 255, 255, 0);
+  border-bottom: 2px solid #5e5e5e;
+  box-shadow: none;
+  color: rgb(255, 255, 255);
+}
+input:invalid {
+  outline: 0;
+  
+}
+input:focus,
+input:valid {
+  border-color: #00FFBA;
+}
+input:focus~label,
+input:valid~label {
+  font-size: 14px;
+  top: -24px;
+  color: #00FFBA;
+}
+
+.form_layout button {
+  border: 2px solid #00FFBA;
+  border-radius: 5px;
+  background-color: #d8d8d800; /* Green */
+  color: #00FFBA;
+  padding: 10px 28px;
+  text-align: center;
+  margin-left: 14rem;
+  margin-top: 2rem;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.form_layout button:hover {
+  background-color: #00FFBA;
+  color: white;
+}
 .owl-theme .owl-controls .owl-page.active span{ background: #00FFBA; }
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 1000px) {
