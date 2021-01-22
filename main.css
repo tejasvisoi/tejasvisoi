@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
 *{
   margin: 0%;
   padding: 0%;
@@ -6,7 +7,7 @@
 
 html{
   font-size: 10px;
-  font-family: 'Gotham';
+  font-family: 'Poppins';
   color: #ffffff;
 }
 
