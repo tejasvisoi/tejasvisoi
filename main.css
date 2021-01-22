@@ -9,6 +9,7 @@ html{
   font-size: 10px;
   font-family: 'Poppins';
   color: #ffffff;
+  scroll-behavior: smooth;
 }
 
 body{
@@ -21,6 +22,7 @@ body{
 
 .section{
 height: 100%;
+
 }
 
 .header {
@@ -241,79 +243,60 @@ transform: scale(1.1);
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-justify-content: center;
-text-align: center;
 width: 100%;
-height: 40px;
 margin-top: 1rem;
-}
-
-.btn {
+border-radius: 10px;
+width: 100px;
+align-items: center;
+height: 45px;
+justify-content: center;
 background-color: rgb(255, 255, 255);
-padding-left: 30px;
-padding-right: 30px;
-padding-top: 8px;  letter-spacing: 1px;
-cursor: pointer;
-font-size: 14px;
-font-weight: 400;
-line-height: 25px;
-max-width: 160px;
-position: relative;
-text-decoration: none;
-border-radius: 40px;  
-transition: all .2s ease-in-out;
+margin-right: 2rem;
 }
-.btn:hover {
-text-decoration: none;
-transform: scale(1.1);
+
+.social{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
 }
+.buttons2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 40px;
+  margin-top: 1rem;
+  border-radius: 10px;
+width: 100px;
+  align-items: center;
+  height: 45px;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  }
+    
+.buttons2:hover{
+  background-color: #ff4f4f;
+}
+.fa-google{
+  color: #000;
+}
+.fa-google:hover{
+  color: #ffffff;
+}
+
+.buttons:hover{
+  background-color: #13d80c;
+}
+.fa-whatsapp{
+  color: #000;
+}
+.fa-whatsapp:hover{
+  color: #ffffff;
+
+}
+
+
 /*btn_background*/
-.effect04 {
---uismLinkDisplay: var(--smLinkDisplay, inline-flex);
-display: var(--uismLinkDisplay);
-color: #000;
-outline: solid  2px #000;
-position: relative;
-transition-duration: 0.4s;
-overflow: hidden;
-}
-
-.effect04::before,
-.effect04 span{
-  margin: 0 auto;
-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-transition-duration: 0.4s;
-}
-
-/* 文字1を上に */
-.effect04:hover{
-background-color: #00FFBA;
-}
-
-/* HOVERしたら文字1を上に */
-.effect04:hover span{
--webkit-transform: translateY(-400%) scale(-0.1,20);
-        transform: translateY(-400%) scale(-0.1,20);
-}
-
-/*文字2*/
-.effect04::before{
-content: attr(data-sm-link-text);
-color: #FFF;
-position: absolute;
-left: 0;
-right: 0;
-margin: auto;
--webkit-transform: translateY(500%) scale(-0.1,20);
-        transform: translateY(500%) scale(-0.1,20);
-}
-
-/* HOVERしたら文字2を上に */
-.effect04:hover::before{
-letter-spacing: 0.05em;
--webkit-transform: translateY(0) scale(1,1);
-        transform: translateY(0) scale(1,1);
-}
 
 .container1{
   z-index: 1;
@@ -340,7 +323,6 @@ width: 300px;
 height: 300px;
 transition: 0.5s;
 border-radius: 10px;
-
 }
 
 .container1 .card1 .face.face1{
@@ -351,7 +333,7 @@ flex-direction: column;
 align-items: center;
 z-index: 1;
 border-radius: 10px;
-transform: translateY(165px);
+transform: translateY(160px);
 }
 
 .container1 .card1:hover .face.face1{
@@ -474,6 +456,7 @@ color: #fff;
   width: 80%;
   margin-top: 25rem;
   margin-bottom: 10rem;
+  scroll-behavior: smooth;
 }
 .contact_container{
   display: flex;
