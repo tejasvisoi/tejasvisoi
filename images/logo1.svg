@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="141" height="47" viewBox="0 0 141 47">
+  <g id="Group_7" data-name="Group 7" transform="translate(-150 -71)">
+    <text id="Play_ff" data-name="Play    ff" transform="translate(150 106)" fill="#00ffba" font-size="33" font-family="Poppins-Bold, Poppins" font-weight="700" letter-spacing="0.05em"><tspan x="0" y="0">P</tspan><tspan y="0" xml:space="preserve" fill="#fff">lay    ff</tspan></text>
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(243 88)" fill="#fff" stroke="#00ffba" stroke-width="2">
+      <circle cx="6.5" cy="6.5" r="6.5" stroke="none"/>
+      <circle cx="6.5" cy="6.5" r="5.5" fill="none"/>
+    </g>
+    <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(236 81)" fill="none" stroke="#00ffba" stroke-width="3">
+      <circle cx="13.5" cy="13.5" r="13.5" stroke="none"/>
+      <circle cx="13.5" cy="13.5" r="12" fill="none"/>
+    </g>
+  </g>
+</svg>

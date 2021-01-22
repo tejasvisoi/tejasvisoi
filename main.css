@@ -25,9 +25,9 @@ padding: 6rem 0;
 .header {
   overflow: hidden;
   opacity: 100%;
-  background-color: #100e17ec;
+  background-color: #000000ec;
   padding: 20px 20px;
-  z-index: 1;
+  z-index: 5;
 }
 
 .sticky {
@@ -42,12 +42,12 @@ padding: 6rem 0;
   padding: 30px;
   text-decoration: none;
   font-size: 18px;
-  line-height: 60px;
+  line-height: 50px;
 }
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
 .header .logo {
-  margin-left: 3rem;
+  margin-left: 14rem;
 }
 
 /* Change the background color on mouse-over */
@@ -60,7 +60,7 @@ padding: 6rem 0;
 
 /* Float the link section to the right */
 .header-right {
-  margin-right: 3rem;    
+  margin-right: 15rem;    
   float: right;
 }
 
@@ -72,14 +72,14 @@ padding: 6rem 0;
 
 .about-details {
 align-items: flex-start;
-margin-left: 20rem;
+margin-left: 16rem;
 }
 
 .about-details p{
 color: #ffffff;
-font-size: 2rem;
-line-height: 2.5rem;
-font-weight: 300;
+font-size: 2.2rem;
+line-height: 3rem;
+font-weight: 400;
 
 }
 .about-heading{
@@ -89,9 +89,9 @@ font-weight: 300;
   
 }
 .about-heading h1{
-  font-size: 6rem;
+  font-size: 5.5rem;
   font-weight: 450;
-  line-height: 7rem;
+  line-height: 6rem;
   color: #ffffff;
 }
 
@@ -113,14 +113,18 @@ text-align: center;
 letter-spacing: 2px;
 color: #ffffff;
 margin-top: 10rem;
+margin-bottom: 5rem;
 }
 
 .card-container {
-width: 100%;
-margin-bottom: 10rem;
-margin-top: 4rem;
+width: 76%;
+border-radius: 10px;
+margin: auto;
+
 overflow-x: scroll;
 display: flex;
+justify-content: left;
+align-items: center;
 background-color: #100e17;
 padding: 3rem;
 }
@@ -140,6 +144,30 @@ padding: 1.5rem;
 transition: 0.2s;
 }
 
+.boximage{
+  display: flex;
+  flex-direction: row;
+}
+.card.image{
+float: right;
+position: relative;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  color: #ffffff;
+  font-size: 10px;
+  
+}
+
+.tags div {
+  font-size: 9px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border: 1px solid #bfe904;
+  border-radius: 2rem;
+}
 .date {
 color: #8a8a8a;
 }
@@ -192,7 +220,7 @@ flex-wrap: wrap;
 justify-content: center;
 text-align: center;
 width: 100%;
-height: 100%;
+height: 40px;
 margin-top: 1rem;
 
 }
@@ -266,40 +294,51 @@ letter-spacing: 0.05em;
 
 
 .container1{
-width: 1000px;
-position: relative;
+  z-index: 1;
+width: 76%;
+margin: auto;
 display: flex;
 justify-content: space-between;
+overflow-x: hidden;
+margin-top: -15rem;
 }
+
+.container1::-webkit-scrollbar {
+  display: none;
+  }
 
 .container1 .card1{
 position: relative;
 cursor: pointer;
+
 }
 
 .container1 .card1 .face{
 width: 300px;
-height: 200px;
+height: 300px;
 transition: 0.5s;
+border-radius: 10px;
+
 }
 
 .container1 .card1 .face.face1{
 position: relative;
 background: #333;
 display: flex;
-justify-content: center;
+flex-direction: column;
 align-items: center;
 z-index: 1;
-transform: translateY(100px);
+border-radius: 10px;
+transform: translateY(165px);
 }
 
 .container1 .card1:hover .face.face1{
-background: #ff0057;
+background: #00FFBA;
 transform: translateY(0);
 }
 
 .container1 .card1 .face.face1 .content{
-opacity: 0.2;
+opacity: .8;
 transition: 0.5s;
 }
 
@@ -307,55 +346,137 @@ transition: 0.5s;
 opacity: 1;
 }
 
-.container1 .card1 .face.face1 .content img{
-max-width: 100px;
+.container1 .card1 .face.face1 img{
+max-height: 320px;
+border-radius: 10px;
 }
 
-.container1 .card1 .face.face1 .content h3{
-margin: 10px 0 0;
-padding: 0;
-color: #fff;
+.container1 .card1 .face.face1 h3{
+margin-top: 3px;
+color: rgb(0, 0, 0);
 text-align: center;
-font-size: 1.5em;
+font-size: 2rem;
+font-weight: 400;
 }
+
 
 .container1 .card1 .face.face2{
 position: relative;
 background: #fff;
 display: flex;
-justify-content: center;
-align-items: center;
-padding: 20px;
-box-sizing: border-box;
+flex-direction: column;
+align-items: left;
 box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
 transform: translateY(-100px);
 }
 
 .container1 .card1:hover .face.face2{
-transform: translateY(0);
+transform: translateY(-50);
+
 }
 
-.container1 .card1 .face.face2 .content p{
-margin: 0;
-padding: 0;
+.container1 .card1 .face.face2 .content{
+color: #000;
+margin-top: 14rem;
+line-height: 23px;
+font-size: 15px;
+margin-left: 20px;
+
 }
 
+  
 .container1 .card1 .face.face2 .content a{
 margin: 15px 0 0;
 display:  inline-block;
 text-decoration: none;
 font-weight: 900;
-color: #333;
-padding: 5px;
-border: 1px solid #333;
+color: rgb(255, 255, 255);
+
 }
 
 .container1 .card1 .face.face2 .content a:hover{
 background: #333;
 color: #fff;
+
 }
 /* Responsive columns - one column layout (vertical) on small screens */
-
+.demo{ background: #000  ; }
+.testimonial{
+    margin: 50px 30px 30px 30px;
+    text-align: center;
+    position: relative;
+}
+.testimonial .description{
+    padding: 30px;
+    margin-bottom: 80px;
+    border-left: 1px solid #fff;
+    font-size: 15px;
+    color: #fff;
+    line-height: 33px;
+    position: relative;
+}
+.testimonial .description:before,
+.testimonial .description:after{
+    content: "";
+    width: 20%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.testimonial .description:after{
+    top: auto;
+    bottom: 0;
+}
+.testimonial .title{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 15px 0;
+    position: relative;
+}
+.testimonial:before,
+.testimonial .title:before{
+    content: "";
+    width: 1px;
+    height: 50px;
+    background: #fff;
+    margin: 0 auto;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+}
+.testimonial .title:before{ top: -80px; }
+.testimonial .pic{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+.testimonial .pic img{
+    width: 100%;
+    height: auto;
+}
+.owl-theme .owl-controls{ margin-top: 0; }
+.owl-theme .owl-controls .owl-page span{
+    width: 10px;
+    height: 10px;
+    border-radius: 0;
+    background: #000;
+    outline: 2px solid #000;
+    outline-offset: 2px;
+    margin-right: 8px;
+    opacity: 0.7;
+    transition: all 0.3s ease 0s;
+}
+.owl-theme .owl-controls .owl-page.active span{
+    background: #fff;
+    outline: 2px solid #fff;
+}
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
   .header a {
