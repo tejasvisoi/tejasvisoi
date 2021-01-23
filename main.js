@@ -12,6 +12,7 @@ $(document).ready(function(){
 fetch("https://api.apispreadsheets.com/data/7006/", {
 	method: "POST",
 	body: JSON.stringify({"data": {"#full_name":"","#email":"fskn ","#phone":"hfsndkfk","#message":"sfdn skdn        "}}),
+    
 }).then(res =>{
 	if (res.status === 201){
 		// SUCCESS
@@ -20,3 +21,4 @@ fetch("https://api.apispreadsheets.com/data/7006/", {
 		// ERROR
 	}
 })
+

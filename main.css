@@ -498,12 +498,14 @@ color: #fff;
   margin-right: 10rem;
   font-size: 1.5rem;
   letter-spacing: 2px;
+  color: #FFF;
 }
 
 .phonenumber{
   margin-top: 1rem;
   font-size: 1.5rem;
   letter-spacing: 2px;
+  color: #00FFBA;
 }
 
 .form_layout{
@@ -576,7 +578,9 @@ input {
 }
 input:invalid {
   outline: 0;
-  
+}
+.phonenumber a{
+  color: #00FFBA;
 }
 input:focus,
 input:valid {
