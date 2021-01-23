@@ -240,18 +240,17 @@ transform: scale(1.1);
 }
 
 .buttons {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-width: 100%;
-margin-top: 1rem;
-border-radius: 10px;
-width: 100px;
-align-items: center;
-height: 45px;
-justify-content: center;
-background-color: rgb(255, 255, 255);
-margin-right: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  border-radius: 50%;
+  width: 38px;
+  align-items: center;
+  height: 38px;
+  margin-right: 10px;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
 }
 
 .social{
@@ -263,13 +262,11 @@ margin-right: 2rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 80%;
-  height: 40px;
   margin-top: 1rem;
-  border-radius: 10px;
-width: 100px;
+  border-radius: 50%;
+  width: 38px;
   align-items: center;
-  height: 45px;
+  height: 38px;
   justify-content: center;
   background-color: rgb(255, 255, 255);
   }
