@@ -1,5 +1,3 @@
-
- 
 $(document).ready(function(){
     $("#testimonial-slider").owlCarousel({
         items:1,
@@ -11,3 +9,14 @@ $(document).ready(function(){
         autoPlay:true
     });
 });
+fetch("https://api.apispreadsheets.com/data/7006/", {
+	method: "POST",
+	body: JSON.stringify({"data": {"#full_name":"","#email":"fskn ","#phone":"hfsndkfk","#message":"sfdn skdn        "}}),
+}).then(res =>{
+	if (res.status === 201){
+		// SUCCESS
+	}
+	else{
+		// ERROR
+	}
+})

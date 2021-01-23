@@ -9,6 +9,7 @@ html{
   font-size: 10px;
   font-family: 'Poppins';
   color: #ffffff;
+  scroll-behavior: smooth;
 }
 
 body{
@@ -21,6 +22,7 @@ body{
 
 .section{
 height: 100%;
+
 }
 
 .header {
@@ -126,17 +128,18 @@ margin-bottom: 3rem;
 }
 
 .paddle {
-	position: relative;
+  position: relative;
+  display: inline-block;
 	top: 0;
 	bottom: 0;
-	width: 3em;
+	width: 3rem;
 }
 
 .left-paddle {
-	left: 0;
+	float: left;
 }
 .right-paddle {
-	right: 0;
+	float: right;
 }
 .card-container {
 max-width: 80%;
@@ -240,79 +243,60 @@ transform: scale(1.1);
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-justify-content: center;
-text-align: center;
 width: 100%;
-height: 40px;
 margin-top: 1rem;
-}
-
-.btn {
+border-radius: 10px;
+width: 100px;
+align-items: center;
+height: 45px;
+justify-content: center;
 background-color: rgb(255, 255, 255);
-padding-left: 30px;
-padding-right: 30px;
-padding-top: 8px;  letter-spacing: 1px;
-cursor: pointer;
-font-size: 14px;
-font-weight: 400;
-line-height: 25px;
-max-width: 160px;
-position: relative;
-text-decoration: none;
-border-radius: 40px;  
-transition: all .2s ease-in-out;
+margin-right: 2rem;
 }
-.btn:hover {
-text-decoration: none;
-transform: scale(1.1);
+
+.social{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
 }
+.buttons2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 40px;
+  margin-top: 1rem;
+  border-radius: 10px;
+width: 100px;
+  align-items: center;
+  height: 45px;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  }
+    
+.buttons2:hover{
+  background-color: #ff4f4f;
+}
+.fa-google{
+  color: #000;
+}
+.fa-google:hover{
+  color: #ffffff;
+}
+
+.buttons:hover{
+  background-color: #13d80c;
+}
+.fa-whatsapp{
+  color: #000;
+}
+.fa-whatsapp:hover{
+  color: #ffffff;
+
+}
+
+
 /*btn_background*/
-.effect04 {
---uismLinkDisplay: var(--smLinkDisplay, inline-flex);
-display: var(--uismLinkDisplay);
-color: #000;
-outline: solid  2px #000;
-position: relative;
-transition-duration: 0.4s;
-overflow: hidden;
-}
-
-.effect04::before,
-.effect04 span{
-  margin: 0 auto;
-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-transition-duration: 0.4s;
-}
-
-/* 文字1を上に */
-.effect04:hover{
-background-color: #00FFBA;
-}
-
-/* HOVERしたら文字1を上に */
-.effect04:hover span{
--webkit-transform: translateY(-400%) scale(-0.1,20);
-        transform: translateY(-400%) scale(-0.1,20);
-}
-
-/*文字2*/
-.effect04::before{
-content: attr(data-sm-link-text);
-color: #FFF;
-position: absolute;
-left: 0;
-right: 0;
-margin: auto;
--webkit-transform: translateY(500%) scale(-0.1,20);
-        transform: translateY(500%) scale(-0.1,20);
-}
-
-/* HOVERしたら文字2を上に */
-.effect04:hover::before{
-letter-spacing: 0.05em;
--webkit-transform: translateY(0) scale(1,1);
-        transform: translateY(0) scale(1,1);
-}
 
 .container1{
   z-index: 1;
@@ -339,7 +323,6 @@ width: 300px;
 height: 300px;
 transition: 0.5s;
 border-radius: 10px;
-
 }
 
 .container1 .card1 .face.face1{
@@ -350,7 +333,7 @@ flex-direction: column;
 align-items: center;
 z-index: 1;
 border-radius: 10px;
-transform: translateY(165px);
+transform: translateY(160px);
 }
 
 .container1 .card1:hover .face.face1{
@@ -468,6 +451,165 @@ color: #fff;
     transition: all 0.3s ease 0s;
 }
 
+.contactbox{
+  margin: auto;
+  width: 80%;
+  margin-top: 25rem;
+  margin-bottom: 10rem;
+  scroll-behavior: smooth;
+}
+.contact_container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact_container.contact{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_container.form_layout{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_us{
+  font-size: 3rem;
+  margin-bottom: 5rem;
+  letter-spacing: 2px;
+}
+
+.contact p{
+  font-size: 1.5rem;
+  width: 40rem;
+  letter-spacing: 2px;
+  margin-bottom: 5rem;
+}
+
+.icons{
+  display: flex;
+  flex-direction: row;
+
+}
+.phoneimage{
+  max-width: 20px;
+  margin-bottom: 1rem;
+}
+
+.phone{
+  margin-right: 10rem;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.phonenumber{
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.form_layout{
+  width: 40rem;
+  height: 50rem;
+  background-color: #17141d;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.formpara {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  letter-spacing: 1px;
+  line-height: 2rem;
+}
+
+.formcontent{
+  display: flex;
+  width: 85%;
+  margin-top: 3rem;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formheading{
+  margin: auto;
+}
+
+.formheading h1{
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+
+form{
+  margin-top: 3rem;
+}
+.input-field {
+  position: relative;
+  width: 85%;
+  margin: auto;
+  margin-top: 1.5rem;
+  height: 5rem;
+  line-height: 44px;
+}
+label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  color: #8d8d8d;
+  transition: 0.2s all;
+  cursor: text;
+}
+
+input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 1rem 0;
+  background-color: rgba(255, 255, 255, 0);
+  border-bottom: 2px solid #5e5e5e;
+  box-shadow: none;
+  color: rgb(255, 255, 255);
+}
+input:invalid {
+  outline: 0;
+  
+}
+input:focus,
+input:valid {
+  border-color: #00FFBA;
+}
+input:focus~label,
+input:valid~label {
+  font-size: 14px;
+  top: -24px;
+  color: #00FFBA;
+}
+
+.form_layout button {
+  border: 2px solid #00FFBA;
+  border-radius: 5px;
+  background-color: #d8d8d800; /* Green */
+  color: #00FFBA;
+  padding: 10px 28px;
+  text-align: center;
+  margin-left: 15rem;
+  margin-top: 2rem;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.form_layout button:hover {
+  background-color: #00FFBA;
+  color: white;
+}
 .owl-theme .owl-controls .owl-page.active span{ background: #00FFBA; }
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 1000px) {
