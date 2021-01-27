@@ -37,6 +37,9 @@ height: 100%;
   justify-content: space-between;
 }
 
+.logoimage{
+  width: 15rem;
+}
 .sticky {
   position: fixed;
   top: 0;
@@ -1078,21 +1081,28 @@ a.pulsingButton:hover {
   
 }
   
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
   .header {
     display: flex;
     flex-direction: row;
     opacity: 100%;
+    padding:20px 20px;
     width: 100%;
     background-color: #000000ec;
-    padding: 10px 10px;
     z-index: 5;
     justify-content: space-between;
   }
+  .header .logo {
+    margin-left: 5rem;
+  }
+  .header-right{
+    margin-right: 5rem;
+  }
  
   .about-details p{
-    line-height: 2rem;
+    line-height: 1.8rem;
     }
+  
     
 a.homebutton {
 display: none;
@@ -1104,7 +1114,7 @@ a.homebutton1 {
 a.animated-button.thar-one {
   text-align: center;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 50px;
   color: #fff;
   padding: 1.5rem;
@@ -1188,4 +1198,135 @@ a.animated-button.thar-one {
     }
     
 }
+@media screen and (max-width: 580px){
+  .header {
+    display: flex;
+    opacity: 100%;
+    padding: 20px 20px 20px 20px;
+    background-color: #000000ec;
+    z-index: 5;
+    justify-content: space-between;
+  }
+  .header .logo {
+    margin-left: 3rem;
+  }
+  .header-right{
+    margin-right: 3rem;
+  }
+ .about-heading h1{
+   font-size: 3rem;
+   line-height: 40px;
+ }
+  .about-details p{
+    font-size: 1rem;
+    line-height: 1.8rem;
+    }
 
+a.homebutton {
+display: none;
+}
+a.homebutton1 {
+  display: none;
+}
+
+a.animated-button.thar-one {
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 50px;
+  color: #fff;
+  margin-left: 1rem;
+  padding: 1.5rem;
+	cursor: pointer;
+  border-radius: 10px;
+	position: relative;
+	border: 2px solid #00FFBA;
+	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+    .about-container{
+      display: flex;
+      align-items: center;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+    }
+    .about-content{
+      display: flex;
+      margin-top: 2rem;
+      max-width: 100%;
+      flex-direction: column;
+    }
+    .card-container{
+      -webkit-overflow-scrolling: touch;
+      overflow-x: scroll;
+    }
+    .demo{ 
+      background: #000000; 
+      max-width: 120%;
+      margin: auto;
+    }
+    .contactbox{
+      margin: auto;
+      width: 100%;
+      margin-top: 25rem;
+      margin-bottom: 10rem;
+      scroll-behavior: smooth;
+    }
+    .contact_container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .phonenumber{
+      margin-top: 1rem;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      color: #00FFBA;
+    }
+    .concentric-circles {
+      width: 40px;
+      height: 40px;
+      margin-top: 90px;
+      z-index: -5;
+      position: absolute;
+      background-color: #00ffbb;
+      border-radius: 50%;
+      transform: translateX(-20%);
+      transition: all 0.2s ease-in-out;
+      animation: ripple 2.0s 0.2s infinite;
+      -webkit-animation: ripple 2.0s 0.2s  infinite;
+    }
+    .form_layout{
+      margin-top: 2rem;
+      width: 90%;
+      background-color: #17141d;
+      border-radius: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+    .form_layout button {
+
+      margin-left: 20rem;
+     
+    }
+    .aboutpara{
+      
+      width: 100%;
+     
+    }
+    .player{
+      position: relative;
+      height: 48rem;
+      margin-left: 10rem;
+      margin-top: -5rem;
+    }
+    .heading1{
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      letter-spacing: 2px;
+      font-weight: 700;
+      color: #ffffff;
+      }
+    
+}
