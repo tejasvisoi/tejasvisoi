@@ -19,6 +19,10 @@ fetch("https://api.apispreadsheets.com/data/7006/", {
 	}
 	else{
 		// ERROR
-	}
+    }
+    AOS.init({
+        easing: 'ease',
+        duration: 1000
+    });
 })
 
