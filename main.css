@@ -1357,7 +1357,6 @@ a.animated-button.thar-one {
       align-items: center;
     }
     .form_layout button {
-
       margin-left: 10rem;
      
     }
@@ -1449,11 +1448,16 @@ a.animated-button.thar-one {
         margin: auto;
       }
       .contact p{
-        font-size: 1rem;
+        font-size: 1.2rem;
         width: 100%;
         letter-spacing: 1px;
         margin-bottom: 5rem;
       }
       
+      .contact_us{
+        font-size: 3rem;
+        margin-bottom: 3rem;
+        letter-spacing: 2px;
+      }
       
 }

@@ -20,6 +20,10 @@
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script>
         function SubForm() {
+            document.getElementById("full_name").value = " ";
+            document.getElementById("email").value = " ";
+            document.getElementById("phone").value = " ";
+            document.getElementById("message").value = " ";
             $.ajax({
                 url: "https://api.apispreadsheets.com/data/7005/",
                 type: "post",
