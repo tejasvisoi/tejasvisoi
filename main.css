@@ -1021,7 +1021,9 @@ a.pulsingButton:hover {
    padding: 10px;
 	 top: 0;
 	 left: 0;
-	 z-index: 1;
+   z-index: 1;
+   font-size: 1.4rem;
+   font-weight: 500;
 	 display: flex;
 	 justify-content: center;
 	 align-items: center;
@@ -1164,6 +1166,7 @@ a.animated-button.thar-one {
       align-items: center;
       justify-content: space-between;
     }
+    
     .phonenumber{
       margin-top: 1rem;
       font-size: 1rem;
@@ -1207,10 +1210,10 @@ a.animated-button.thar-one {
     justify-content: space-between;
   }
   .header .logo {
-    margin-left: 3rem;
+    margin-left: 2rem;
   }
   .header-right{
-    margin-right: 3rem;
+    margin-right: 2rem;
   }
  .about-heading h1{
    font-size: 3rem;
@@ -1252,12 +1255,12 @@ a.animated-button.thar-one {
 .illustration{
   width: 100%;
 }
-    .about-container{
-      display: flex;
-      align-items: center;
-      flex-direction: column-reverse;
-      justify-content: space-between;
-    }
+.about-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
     .about-content{
       display: flex;
       margin-top: 2rem;
@@ -1268,6 +1271,17 @@ a.animated-button.thar-one {
       -webkit-overflow-scrolling: touch;
       overflow-x: scroll;
     }
+    .card {
+      min-width: 340px;
+      height: 400px;
+      border-radius: 16px;
+      background-color: #272231;
+      box-shadow: -1rem 0 3rem #000;
+      display: flex;
+      flex-direction: column;
+      padding: 1.5rem;
+      transition: 0.2s;
+      }
     .demo{ 
       background: #000000; 
       max-width: 120%;
@@ -1284,7 +1298,36 @@ a.animated-button.thar-one {
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-left: 1rem;
       justify-content: space-between;
+    }
+    .card-container {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: auto;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: #100e17;
+      padding: 1rem;
+      }
+      .tags{
+        margin-left: 40px;
+      }
+      .tags div {
+        font-size: 5px;
+        letter-spacing: 2px;
+        font-weight: 500;
+        padding: 4px 10px;
+        border: 1px solid #00FFBA;
+        border-radius: 2rem;
+      }
+    
+    .contact_container.contact{
+      display: flex;
+      flex-direction: column;
+      margin: auto;
     }
     .phonenumber{
       margin-top: 1rem;
@@ -1293,9 +1336,9 @@ a.animated-button.thar-one {
       color: #00FFBA;
     }
     .concentric-circles {
-      width: 40px;
-      height: 40px;
-      margin-top: 90px;
+      width: 20px;
+      height: 20px;
+      margin-top: 0px;
       z-index: -5;
       position: absolute;
       background-color: #00ffbb;
@@ -1315,7 +1358,7 @@ a.animated-button.thar-one {
     }
     .form_layout button {
 
-      margin-left: 20rem;
+      margin-left: 10rem;
      
     }
     .aboutpara{
@@ -1402,12 +1445,15 @@ a.animated-button.thar-one {
                     rotate(-360deg);
         }
       }
+      .contact{
+        margin: auto;
+      }
+      .contact p{
+        font-size: 1rem;
+        width: 100%;
+        letter-spacing: 1px;
+        margin-bottom: 5rem;
+      }
       
-.phone{
-  width: 100%;
-  margin-inline-end: auto;
-  font-size: 1.5rem;
-  letter-spacing: 2px;
-  color: #FFF;
-}
+      
 }
