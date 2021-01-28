@@ -1292,7 +1292,8 @@ a.animated-button.thar-one {
 	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 .imageill{
-  width: 100%;
+  width: 150%;
+  margin-left: 15rem;
 }
 .circles{
   width: 100%;
@@ -1358,6 +1359,7 @@ a.animated-button.thar-one {
       background-color: #100e17;
       padding: 1rem;
       }
+
       .tags{
         margin-left: 40px;
       }
@@ -1555,4 +1557,7 @@ a.animated-button.thar-one {
       margin-top: 8rem;
   
     }
+    .card:not(:first-child) {
+      margin-left: -40px;
+      }
 }
