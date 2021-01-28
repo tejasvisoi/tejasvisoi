@@ -957,9 +957,9 @@ a.pulsingButton:hover {
   }
 }
 .concentric-circles {
-  width: 40px;
-  height: 40px;
-  margin-top: 90px;
+  width: 35px;
+  height: 35px;
+  margin-top: 50px;
   z-index: -5;
   position: absolute;
   background-color: #00ffbb;
@@ -1192,7 +1192,6 @@ a.animated-button.thar-one {
       align-items: center;
     }
     .form_layout button {
-
       margin-left: 20rem;
      
     }
@@ -1243,7 +1242,16 @@ a.animated-button.thar-one {
 	border: 2px solid #00FFBA;
 	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
+.imageill{
+  width: 100%;
+}
+.circles{
+  width: 100%;
 
+}
+.illustration{
+  width: 100%;
+}
     .about-container{
       display: flex;
       align-items: center;
@@ -1317,9 +1325,9 @@ a.animated-button.thar-one {
     }
     .player{
       position: relative;
-      height: 48rem;
-      margin-left: 10rem;
-      margin-top: -5rem;
+      height: 35rem;
+      margin-left: 8rem;
+      margin-top: 0rem;
     }
     .heading1{
       font-size: 2.5rem;
@@ -1328,5 +1336,78 @@ a.animated-button.thar-one {
       font-weight: 700;
       color: #ffffff;
       }
-    
+      .main1{
+        width:280px;
+        height:280px;
+        border:2px solid #CCC;
+        position: absolute;;
+        top:0; bottom:0; left:0;right:0;
+        margin:auto;
+        border-radius:50%; 
+      }
+      .main{
+        position: relative;
+        width:330px;
+        height:330px;
+        top:0; bottom:0; left:0;right:0;
+        border:2px solid #CCC;
+        margin: auto;
+        border-radius: 50%;
+      }
+      .circle{
+        width:30px;
+        height:30px;
+        background:#00FFBA;
+        border-radius:50%;
+        position: absolute;
+        margin: auto;
+        top:0; bottom:0; left:0;right:0;
+        overflow-x:hidden;
+        animation: circle 9s linear infinite;
+      }
+      .circle1{
+        width:20px;
+        height:20px;
+        background:#00FFBA;
+        border-radius:50%;
+        position: absolute;
+        top:0; bottom:0; left:0;right:0;
+        overflow-x:hidden;
+        margin: auto;
+        animation: circle1 8s linear infinite;
+      }
+      @keyframes circle1{
+        0%{
+          transform:rotate(50deg)
+                    translate(-135px)
+                    rotate(50deg);
+        
+        }
+        100%{
+          transform:rotate(410deg)
+                    translate(-135px)
+                    rotate(-410deg);
+        }
+      }
+      @keyframes circle{
+        0%{
+          transform:rotate(0deg)
+                    translate(-165px)
+                    rotate(0deg);
+        
+        }
+        100%{
+          transform:rotate(360deg)
+                    translate(-165px)
+                    rotate(-360deg);
+        }
+      }
+      
+.phone{
+  width: 100%;
+  margin-inline-end: auto;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: #FFF;
+}
 }
