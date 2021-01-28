@@ -31,7 +31,7 @@ height: 100%;
   flex-direction: row;
   opacity: 100%;
   width: 100%;
-  background-color: #000000ec;
+  background: #111013;
   padding: 20px 20px;
   z-index: 5;
   justify-content: space-between;
@@ -1001,18 +1001,17 @@ a.pulsingButton:hover {
 	 --btn-overlay-color: #ffffff;
 	 --icon-color: #000000;
    position: relative;
-   width: 15rem;
+   width: fit-content;
 	 display: flex;
-	 font-size: 100%;
+	 overflow-y: hidden;
 	 color: rgb(0, 0, 0);
 	 letter-spacing: 2px;
-	 border: none;
+   border: none;
+   height: 5rem;
 	 border-radius: 80px;
    outline: none;
    margin-top: 20px;
-
    cursor: pointer;
-   overflow: hidden;
 	 transform: rotate(0);
 	 transition: 0.2s ease-in-out;
 }
@@ -1024,6 +1023,7 @@ a.pulsingButton:hover {
    z-index: 1;
    font-size: 1.4rem;
    font-weight: 500;
+   overflow-y: hidden;
 	 display: flex;
 	 justify-content: center;
 	 align-items: center;
@@ -1064,6 +1064,50 @@ a.pulsingButton:hover {
 	 opacity: 1;
 	 transform: translateX(0);
 }
+footer{
+  align-items: center;
+  padding: 3rem;
+  font-size: 1.5rem;
+  position: relative;
+  justify-content: center;
+}
+.footer1{
+  background: #111013;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.fa {
+  padding: 1rem;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa-instagram {
+  background: #666666;
+  color: white;
+  margin-right: 2rem;
+}
+
+.fa-linkedin {
+  background: #666666;
+  color: rgb(255, 255, 255);
+  margin-right: 2rem;
+}
+
+.fa-twitter {
+  background: #666666;
+  color: rgb(255, 255, 255);
+}
+/* Add a hover effect if you want */
+.fa:hover {
+  background: #000;
+  color: #00FFBA;
+}
+
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 1000px) {
  
@@ -1210,18 +1254,20 @@ a.animated-button.thar-one {
     justify-content: space-between;
   }
   .header .logo {
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
   .header-right{
-    margin-right: 2rem;
+    margin-right: 1rem;
   }
  .about-heading h1{
-   font-size: 3rem;
-   line-height: 40px;
+   font-size: 4rem;
+   line-height: 50px;
  }
   .about-details p{
-    font-size: 1rem;
-    line-height: 1.8rem;
+    display: none;
+    }
+    .logoimage{
+      width: 10rem;
     }
 
 a.homebutton {
@@ -1235,7 +1281,7 @@ a.animated-button.thar-one {
   text-align: center;
   text-decoration: none;
   font-size: 16px;
-  line-height: 50px;
+  line-height:30px;
   color: #fff;
   margin-left: 1rem;
   padding: 1.5rem;
@@ -1273,7 +1319,7 @@ a.animated-button.thar-one {
     }
     .card {
       min-width: 340px;
-      height: 400px;
+      height: 420px;
       border-radius: 16px;
       background-color: #272231;
       box-shadow: -1rem 0 3rem #000;
@@ -1446,18 +1492,67 @@ a.animated-button.thar-one {
       }
       .contact{
         margin: auto;
+        margin-left: 2rem;
       }
       .contact p{
-        font-size: 1.2rem;
-        width: 100%;
+        font-size: 1.1rem;
+        width: 90%;
         letter-spacing: 1px;
         margin-bottom: 5rem;
       }
       
       .contact_us{
         font-size: 3rem;
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
         letter-spacing: 2px;
       }
+
+      .testimonial{
+        padding: 20px 25px;
+    }
+    
+    .testimonial .pic img{
+        width: 100%;
+        height: auto;
+    }
+    .testimonial .title{
+        display: block;
+        margin: 0 0 7px 0;
+        font-size: 20px;
+        font-weight: 600;
+        color: #00FFBA;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    .testimonial .post{
+        display: block;
+        font-size: 15px;
+        color: #fff;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+    .testimonial .description{
+        font-size: 16px;
+        color: #fff;
+        line-height: 30px;
+    }
+    .phonenumber{
+      margin-top: 1rem;
+      font-size: 1.3rem;
+      letter-spacing: 1px;
+      color: #00FFBA;
+    }
+    .phone{
+      margin-right: 1rem;
+      font-size: 1.3rem;
+      letter-spacing: 1px;
+      color: #FFF;
+      margin-bottom: 3rem;
+    }
+    .contactbox{
       
+      width: 90%;
+      margin-top: 8rem;
+  
+    }
 }
